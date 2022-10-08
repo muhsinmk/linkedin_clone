@@ -1,10 +1,18 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+// Supporting Components 
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <div className="app">
-      <h1>linkedlin clone</h1>
+      <Header />
+
+      {/* App Body  */}
+      <div className="app_body">
+        <Sidebar />
+      </div>
     </div>
   );
 }
